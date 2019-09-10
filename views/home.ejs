@@ -1,0 +1,270 @@
+<%- include("partials/header") -%>
+<div id="fullpage">
+<div id="home-section" class="section" data-anchor="home">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">       
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="svg-wrapper">
+            <svg class="border-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" />
+                <div class="text">
+                    <h1>Fabricio Bezerra</h1>
+                    <h4 class="subtitle">Web Developer</h4>
+                </div>
+            </svg>
+        </div>
+      
+    </div>
+</div>
+<div id="about-section" class="section" data-anchor="about">
+    <div class="container">
+        <div class="jumbotron"  >
+            <h1 class="display-3">About</h1>
+            <p class="lead">A little about me...</p>
+            <hr class="my-2">
+        </div>
+        <div class="row">
+            <div class="col col-12 col-md-6 img-wrapper pb-3">
+                <img class="profile-photo" src="../img/fabriciobezerra.jpg" alt="">
+            </div>
+            <div class="col col-12 col-md-6 about-content pb-3" >
+                <div class="row">
+                    <div class="col-1"><img class="icon" src="../img/icons/brazil.png" /></div>
+                    <div class="col col-11"><p> Brazilian</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><img class="icon" src="../img/icons/las-vegas.png" /></div>
+                    <div class="col col-11"><p> Based in Las Vegas</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><img class="icon" src="../img/icons/heart.png" /></div>
+                    <div class="col col-11"><p> I love coding, music, traveling, tennis and my family</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><img class="icon" src="../img/icons/code.png" /></div>
+                    <div class="col col-11"><p> I started working as a programmer more than 10 years ago.</p> 
+                            <p>After that, I changed careers and worked exclusively with music for a while.</p>
+                            <p>I restarted coding and learning new technologies in 2018</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><img class="icon" src="../img/icons/study.png" /></div>
+                    <div class="col col-11"><p>Self Starter and Highly Motivated to learn</p></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="work-section" class="section" data-anchor="work">
+    <div class="container">
+        <div class="jumbotron"  >
+            <h1 class="display-3">Recent Work</h1>
+            <p class="lead">Some of my recent projects <span>(Ongoing Projects)</span></p>
+            <hr class="my-2">
+        </div>
+        <div class="card mb-3">
+            <div class="row no-gutters work">
+                <div class="col col-md-6 work-description order-1 order-md-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Horizon Entertainment</h4>                
+                        <p class="card-title">Horizon Entertainment provides VIP concierge and host services in Las Vegas.</p>
+                        <p class="card-title">Some of the technologies used to develop this Node.js application:</p>
+                        <ul>
+                            <li>Express & Body-Parser</li>
+                            <li>EJS Templating </li>
+                            <li>MongoDB Atlas</li>
+                            <li>Passport OAuth 2.0 API</li>
+                            <li>Google APIs (Geocoding and Maps Javascript)</li>
+                            <li>Cheerio</li>
+                        </ul>
+                        <a href="http://horizonlasvegas.herokuapp.com" class="primary-btn">horizonlasvegas.herokuapp.com</a>
+                    </div>
+                </div>
+                <div class="col work-img col col-12 col-md-6 work-img order-2 order-md-1" style="background-image:url(../img/work/horizon.png);" ></div>
+            </div>
+        </div>  
+        <div class="card mb-3">
+            <div class="row no-gutters work">
+                <div class="col col-md-6 work-description">
+                    <div class="card-body">
+                        <h4 class="card-title">AshKatt</h4>                
+                        <p class="card-title">AshKatt is Ashley Kellough. She is an super talented visual artist and singer from Las Vegas.</p>
+                        <p class="card-title">Some of the technologies used to develop this Node.js application:</p>
+                        <ul>
+                            <li>Express & Body-Parser</li>
+                            <li>EJS Templating</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <a href="http://ashkatt.herokuapp.com" class="primary-btn">ashkatt.herokuapp.com</a>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 work-img" style="background-image:url(../img/work/ashkatt.png);"  ></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="skills-section" class="section" data-anchor="skills">
+    <div class="container">
+       
+                <div class="jumbotron" >
+                    <h1 class="display-3">Coding Skills</h1>
+                    <p class="lead">Learning something new everyday!</p>
+                    <hr class="my-2">
+                </div>  
+                <div class="skills-list">
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/html5.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/css.png" alt="">
+                    </div>   
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/javascript.png" alt="">
+                    </div>           
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/bootstrap.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/nodejs.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/github.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/react.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/mysql.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/mongodb.png" alt="">
+                    </div>
+                </div> 
+         
+                <!-- <div class="jumbotron" >
+                    <h1 class="display-3">Communication Skills</h1>
+                    <p class="lead">Learning something new everyday!</p>
+                    <hr class="my-2">
+                </div>
+                <div class="skills-list">
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/html5.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/html5.png" alt="">
+                    </div>
+                    <div class="skill-wrapper" >
+                        <img class="skill-icon" src="../img/icons/html5.png" alt="">
+                    </div>
+                </div> -->
+            
+    </div>
+</div>
+
+<div id="contact-section" class="section" data-anchor="contact">
+    <div class="container">
+        <div class="jumbotron" >
+            <h1 class="display-3">Contact</h1>
+            <p class="lead">I look forward to hearing from you.</p>
+            <hr class="my-2">
+        </div>  
+
+        <div class="row contact-form">
+            <div class="col-md-4 order-2 order-md-1">
+                <div class="row">
+                    <!-- <div class="col col-12">
+                        <i class="fas fa-mail-bulk fa-4x"></i>
+                    </div> -->
+                    <div class="col col-12">
+                    <p>Fabricio Bezerra</p>
+                    </div>
+                    <div class="col col-12">
+                        <p>+1 (702) 241-6148</p>
+                    </div>
+                    <div class="col col-12">
+                        <p>contact@fabriciobezerra.com</p>
+                    </div>
+                    <!-- <div class="col col-12">
+    
+                    <h4>Contact me!<br>We would love to hear from you!</h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-8 order-1 order-md-2">
+                <form action="/contact" class="contact-form" method="POST">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fname">Name:</label>
+                        <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Enter your name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-12">
+                        <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Message:</label>
+                        <div class="col-sm-12">
+                        <textarea class="form-control" name="message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-12">
+                        <button data-target="#modalMessageConfirmation" data-toggle="modal" class="primary-btn">Send</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-12 order-3">
+                <a href="http://www.instagram.com/fabriciobezerramusic"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://www.facebook.com/fabriciobezerramusic"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></div> -->
+</div>
+
+<!-- MODAL CONFIRMATION MESSAGE -->
+<div id="modalMessageConfirmation" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <i class="material-icons">&#xE876;</i>
+                </div>
+                <h4 class="modal-title">Awesome!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Thanks for contacting me. I'll be in touch soon.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") -%>
