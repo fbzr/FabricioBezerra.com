@@ -454,4 +454,13 @@ h1 {
     .card-body {
         padding: 1.25rem 0;
     }
+    #credit-section h4 {
+        font-size: 1.2rem;
+    }
+    #credit-section h2 {
+        font-size: 1.5rem;
+    }
+    #credit-section p {
+        font-size: .8rem;
+    }
 }
