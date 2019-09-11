@@ -227,6 +227,11 @@ h1 {
     margin-bottom: 5rem !important;
 }
 
+.work-description {
+    display: flex;
+    flex-direction: column;
+}
+
 #work-section .card {
     border: none;
     background-color: transparent;
@@ -304,37 +309,6 @@ h1 {
     color: #fff !important;
 }
 
-@media screen and (min-width: 1200px) {
-    #contact-section .contact-form p {
-        letter-spacing: 5px;
-    }
-}
-@media screen and (max-width: 1199px) {
-    #contact-section .contact-form p {
-        letter-spacing: 3px;
-    }
-}
-@media screen and (max-width: 991px) {
-    #contact-section .contact-form p {
-        letter-spacing: 1px;
-    }
-}
-@media screen and (max-width: 767px) {
-    #contact-section .contact-form p {
-        letter-spacing: 5px;
-    }
-    .col-md-4.order-2.order-md-1  {
-        text-align: center;
-    }
-    .primary-btn {
-        margin: auto;
-    }
-}
-@media screen and (max-width: 374px) {
-    #contact-section .contact-form p {
-        letter-spacing: 2px;
-    }
-}
 
 
 
@@ -429,6 +403,43 @@ h1 {
 #credit-section {
     text-align: center;    
 }
+
+
+@media screen and (min-width: 1200px) {
+    #contact-section .contact-form p {
+        letter-spacing: 5px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    #contact-section .contact-form p {
+        letter-spacing: 3px;
+    }
+}
+@media screen and (max-width: 991px) {
+    #contact-section .contact-form p {
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #contact-section .contact-form p {
+        letter-spacing: 5px;
+    }
+    .col-md-4.order-2.order-md-1  {
+        text-align: center;
+    }
+    .primary-btn {
+        margin: auto;
+    }
+    .nav-item {
+        margin: 10px 15px;
+    }
+}
+@media screen and (max-width: 374px) {
+    #contact-section .contact-form p {
+        letter-spacing: 2px;
+    }
+}
+
 @media (min-width: 576px) {
     .jumbotron {
         padding: 0;
@@ -449,10 +460,7 @@ h1 {
         padding: 7px 30px; 
     }
     .primary-btn {
-        padding: 10px 20px;
-    }
-    .card-body {
-        padding: 1.25rem 0;
+        padding: 10px 10px;
     }
     #credit-section h4 {
         font-size: 1.2rem;
@@ -462,5 +470,10 @@ h1 {
     }
     #credit-section p {
         font-size: .8rem;
+    }
+
+    .nav-item {
+        margin: 10px 7px;
+        letter-spacing: 0;
     }
 }
