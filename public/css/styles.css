@@ -318,6 +318,13 @@ h1 {
     transform: scale(1.3);
 }
 
+.control-label {
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: .5rem;
+}
+
 /* Button's column */
 .col-sm-offset-2.col-sm-12 {
     display: flex;
