@@ -490,6 +490,10 @@ h1 {
     #skills-section .display-3 span {
         font-size: 2.3rem !important;
     }
+
+    #skills-section .skills-list p {
+        margin-bottom: 0.3rem;
+    }
     
     .skill-wrapper {
         padding: 7px 25px;
