@@ -256,6 +256,9 @@ h1 {
 }
 
 /* Skills */
+#skills-section .jumbotron {
+    margin-bottom: 0;
+}
 /* center carousel content content */
 .owl-stage {
     display: flex;
