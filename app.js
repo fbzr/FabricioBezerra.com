@@ -31,11 +31,23 @@ app.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { name, email, message, token } = req.body;    
+    if(
+      req.body.token === undefined ||
+      req.body.token === '' ||
+      req.body.token === null
+    ) {
+      return res.status(401).json({ 
+        errors: [{
+          msg: 'No recaptcha token'
+        }] 
+      })
+    }
+
+    const { name, email, message, token } = req.body; 
 
     // Google Recaptcha
     const recaptcha = await axios.post(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`, 
+      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}&remoteip=${req.connection.remoteAddress}`, 
       {}, 
       {
         headers: {
@@ -43,14 +55,11 @@ app.post(
         }
       }
     );
-    console.log(recaptcha);
-    
     
     if (recaptcha.data.success == false || recaptcha.data.score < 0.5) {
       return res.status(401).json({ 
         errors: [{
-          msg: 'Sorry, your message was detected as spam',
-          recaptcha: recaptcha
+          msg: 'Sorry, your message was detected as spam'
         }] 
       })
     }
