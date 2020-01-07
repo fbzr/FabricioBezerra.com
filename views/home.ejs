@@ -335,6 +335,10 @@
                             document.getElementById('modalIcon').innerHTML = "&#x73;"
                             document.querySelector('.icon-box').classList.add('error');
                             msg = err.response.data.errors[0].msg;
+
+                            if (err.recaptcha) {
+                                console.log(err.recaptcha);
+                            }
                         }
                         document.getElementById('modalMessage').innerHTML = msg;
                         $('#modalMessageConfirmation').modal('toggle');
