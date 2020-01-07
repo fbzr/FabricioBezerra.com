@@ -43,14 +43,31 @@ app.post(
         }
       }
     );
-    if (recaptcha.data.success === false || recaptcha.data.score < 0.5) {
+    console.log(recaptcha);
+    
+    if (recaptcha.data.success == false) {
       return res.status(401).json({ 
         errors: [{
-          msg: `Sorry, your message was detected as spam\n${recaptcha.data}`,
+          msg: 'Success == false'
         }] 
       })
     }
-
+    if (recaptcha.data.score < 0.5) {
+      return res.status(401).json({ 
+        errors: [{
+          msg: `Score: ${recaptcha.data.score}`
+        }] 
+      })
+    }
+    /*
+    if (recaptcha.data.success == false || recaptcha.data.score < 0.5) {
+      return res.status(401).json({ 
+        errors: [{
+          msg: `Sorry, your message was detected as spam, ${recaptcha.data.success}, ${recaptcha.data.score}`
+        }] 
+      })
+    }
+    */
     // Node Mailer
     const output = '<p>You have a new message from FabricioBezerra.com</p><h3>Contact Details</h3><ul><li>Name: ' + name + '</li><li>Email: ' + email + '</li></ul><h3>Message:</h3><p>' + message + '</p>';
     let transporter = nodeMailer.createTransport({
