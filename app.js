@@ -36,7 +36,7 @@ app.post(
       req.body.token === '' ||
       req.body.token === null
     ) {
-      return res.status(401).json({ 
+      return res.status(400).json({ 
         errors: [{
           msg: 'No recaptcha token'
         }] 
@@ -55,6 +55,18 @@ app.post(
         }
       }
     );
+
+    if (
+      recaptcha === undefined ||
+      recaptcha === '' ||
+      recaptcha === null
+    ) {
+      return res.status(400).json({ 
+        errors: [{
+          msg: 'Recaptcha undefined'
+        }] 
+      })
+    }
     
     if (recaptcha.data.success == false || recaptcha.data.score < 0.5) {
       return res.status(401).json({ 
