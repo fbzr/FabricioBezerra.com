@@ -46,7 +46,7 @@ app.post(
     if (recaptcha.data.success === false || recaptcha.data.score < 0.5) {
       return res.status(401).json({ 
         errors: [{
-          msg: "Sorry, your message was detected as spam"
+          msg: `Sorry, your message was detected as spam\n${recaptcha.data}`,
         }] 
       })
     }
@@ -74,7 +74,7 @@ app.post(
       html: output // html body
     };
   
-    /*transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         return res.status(400).json({ 
           errors: [{ 
@@ -83,7 +83,8 @@ app.post(
           }] 
         });
       } 
-    }); */
+    });
+
     res.status(200).json({ msg: "Thank you for conctacting me. I'll be in touch soon." });
 });
 
