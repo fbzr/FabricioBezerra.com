@@ -6,10 +6,6 @@
 
 
     <script type="text/javascript">
-
-        
-        
-       
         // Border animation on home page
         $(function() {
             $('.shape').addClass("shape-border");
@@ -29,21 +25,24 @@
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
             verticalCentered: true,
-            navigationTooltips: ['Home', 'About', 'Recent Work', 'Skills', 'Contact']
+            navigationTooltips: ['Home', 'About', 'Recent Work', 'Skills', 'Contact'],
+            fixedElements: ['#modalMessageConfirmation'],
+
+            onLeave: (origin, destination, direction) => {
+                if (destination.anchor === "contact") {
+                    document.querySelector('.grecaptcha-badge').style.visibility = "visible";
+                } else if (origin.anchor === "contact") {
+                    document.querySelector('.grecaptcha-badge').style.visibility = "hidden";
+                }
+            }
         });
 
         //methods
         fullpage_api.setAllowScrolling(true);  
 
 
-      
-        
-    //    Redirect to "/" when modal popup is closed
-        $("#modalMessageConfirmation").on('hidden.bs.modal', function(){
-            window.location.replace("/");
-        });
-          // Owl Carousel
-          $('.owl-carousel').owlCarousel({
+        // Owl Carousel
+        $('.owl-carousel').owlCarousel({
             autoplay: false,
             dots: true,
             loop: true,

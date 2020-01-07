@@ -17,6 +17,10 @@ h1 {
     font-weight: 300;
 }
 
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
 /* Fullpage.js */
 #fp-nav ul li .fp-tooltip {
     color: #212529;
@@ -426,7 +430,7 @@ h1 {
     border-radius: 5px;
     font-size: 13px;
 }
-  
+
 .modal-confirm .icon-box {
     color: #fff;
     position: absolute;
@@ -449,7 +453,11 @@ h1 {
     position: relative;
     top: 3px;
 }
-  
+
+.modal-confirm .icon-box.error {
+    background: #e92323;
+}
+
 .modal-confirm .btn {
     color: #fff;
     border-radius: 4px;

@@ -237,28 +237,28 @@
                 </div>
             </div>
             <div class="col-md-8 order-1 order-md-2">
-                <form action="/contact" class="contact-form" method="POST">
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="fname">Name:</label>
                         <div class="col-sm-12">
-                        <input type="text" class="form-control" placeholder="Enter your name" name="name">
+                        <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Email:</label>
                         <div class="col-sm-12">
-                        <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                        <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="comment">Message:</label>
                         <div class="col-sm-12">
-                        <textarea class="form-control" name="message" rows="5"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-12">
-                        <button type="submit" data-target="#modalMessageConfirmation" data-toggle="modal" class="primary-btn">Send</button>
+                        <input type="submit" class="primary-btn" value="Send">
                     </div>
                     </div>
                 </form>
@@ -269,15 +269,6 @@
             </div>
         </div>
     </div>
-
-    
-</div>
-
-<div id="credit-section" class="section">
-    <h4>Developed by</h4>
-    <h2>© 2019 Fabricio Bezerra</h2><p>All Rights Reserved</p>
-</div>
-
 </div>
 
 <!-- MODAL CONFIRMATION MESSAGE -->
@@ -285,19 +276,80 @@
     <div class="modal-dialog modal-confirm">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="icon-box">
-                    <i class="material-icons">&#xE876;</i>
+                <div class="icon-box error">
+                    <i class="material-icons" id="modalIcon">&#xE876;</i>
                 </div>
-                <h4 class="modal-title">Awesome!</h4>
+                <h4 class="modal-title" id="modalTitle">Awesome!</h4>
             </div>
             <div class="modal-body">
-                <p class="text-center">Thanks for contacting me. I'll be in touch soon.</p>
+                <p class="text-center" id="modalMessage"></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
             </div>
         </div>
     </div>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', submitForm);
+    
+    async function submitForm(e) {
+        e.preventDefault();
+
+        try {
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LdTx7cUAAAAAPQGHWIczsIUJhuz6dJkOP_iduPw', {action: 'home'})
+                    .then(async function(token) {
+                        
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const message = document.getElementById('message').value;
+
+                        const body = JSON.stringify({ 
+                            name,
+                            email,
+                            message,
+                            token
+                        });
+
+                        const config = {
+                            headers: {
+                                "Content-Type": "application/json"
+                            }
+                        } 
+                        let msg = '';
+                        try {
+                            const res = await axios.post('/contact', body, config);
+                            document.getElementById('modalTitle').innerHTML = "Awesome";
+                            document.getElementById('modalIcon').innerHTML = "&#xE876;"
+                            document.querySelector('.icon-box').classList.remove('error');
+                            msg = res.data.msg;
+
+                            // Redirect to "/" when modal popup is closed
+                            $("#modalMessageConfirmation").on('hidden.bs.modal', function(){
+                                window.location.replace("/");
+                            });
+                        } catch (err) { 
+                            document.getElementById('modalTitle').innerHTML = "Error";
+                            document.getElementById('modalIcon').innerHTML = "&#x73;"
+                            document.querySelector('.icon-box').classList.add('error');
+                            msg = err.response.data.errors[0].msg;
+                        }
+                        document.getElementById('modalMessage').innerHTML = msg;
+                        $('#modalMessageConfirmation').modal('toggle');
+                }); 
+            });
+        } catch (err) {
+            console.error(err.message);
+        }
+    }
+</script>
+<div id="credit-section" class="section">
+    <h4>Developed by</h4>
+    <h2>© 2019 Fabricio Bezerra</h2><p>All Rights Reserved</p>
+</div>
+
 </div>
 
 <%- include("partials/footer") -%>
