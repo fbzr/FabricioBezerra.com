@@ -201,7 +201,10 @@ h1 {
   height: 32px;
 }
 /* Work */
-#work-section .card-title span {
+#work-section .lead {
+  line-height: 1;
+}
+#work-section .lead span {
   font-size: 0.8rem;
   background-color: rgba(255, 255, 0, 0.596);
   letter-spacing: 3px;
