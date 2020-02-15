@@ -201,6 +201,9 @@ h1 {
   height: 32px;
 }
 /* Work */
+#work-section {
+  /* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
+}
 #work-section .lead {
   line-height: 1;
 }
@@ -209,34 +212,29 @@ h1 {
   background-color: rgba(255, 255, 0, 0.596);
   letter-spacing: 3px;
 }
-/* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
-#work-section .container {
+#work-section .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 3rem !important;
+  position: relative;
 }
-.work .col {
-  margin-bottom: 2rem;
-}
-.work-description {
+#work-section .item .work-description {
   display: flex;
   flex-direction: column;
+  padding: 1.25rem;
+  width: 50%;
 }
-#work-section .card {
-  border: none;
-  background-color: transparent;
-}
-#work-section .card-body {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0;
-}
-#work-section .primary-btn {
-  margin: auto;
-}
-.work-img {
+#work-section .item .work-img {
+  width: 50%;
   min-height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
+}
+#work-section .item .work-link {
+  text-align: center;
+  width: 400px;
 }
 /* Skills */
 #skills-section .jumbotron {
