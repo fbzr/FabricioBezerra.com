@@ -1,3 +1,40 @@
+/* Work */
+#work-section {
+  /* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
+}
+#work-section .lead {
+  line-height: 1;
+}
+#work-section .lead span {
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 0, 0.596);
+  letter-spacing: 3px;
+}
+#work-section .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem !important;
+  position: relative;
+}
+#work-section .item .work-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.25rem;
+  width: 50%;
+}
+#work-section .item .work-img {
+  width: 50%;
+  min-height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#work-section .item .work-link {
+  text-align: center;
+  width: 400px;
+  margin-top: 20px;
+}
 body {
   overflow-x: hidden;
   color: #212529;
@@ -199,42 +236,6 @@ h1 {
 .icon {
   width: 32px;
   height: 32px;
-}
-/* Work */
-#work-section {
-  /* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
-}
-#work-section .lead {
-  line-height: 1;
-}
-#work-section .lead span {
-  font-size: 0.8rem;
-  background-color: rgba(255, 255, 0, 0.596);
-  letter-spacing: 3px;
-}
-#work-section .item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 3rem !important;
-  position: relative;
-}
-#work-section .item .work-description {
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem;
-  width: 50%;
-}
-#work-section .item .work-img {
-  width: 50%;
-  min-height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-#work-section .item .work-link {
-  text-align: center;
-  width: 400px;
 }
 /* Skills */
 #skills-section .jumbotron {
