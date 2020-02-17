@@ -74,66 +74,8 @@
         </div>
     </div>
 </div>
-<div id="work-section" class="section" data-anchor="work">
-    <div class="container">
-        <div class="jumbotron"  >
-            <h1 class="display-3">Recent Work</h1>
-            <p class="lead">Some of my recent projects<br><span>(Created for learning proccess)</span></p>
-            <hr class="my-2">
-        </div>
-    </div>
-    <div class="owl-carousel owl-theme">
-        <!-- First slide -->
-        <div class="item container">
-            <div class="work-description">
-                <h4>Horizon Entertainment</h4>                
-                <p>Horizon Entertainment provides VIP concierge and host services in Las Vegas.</p>
-                <p>Some of the technologies used to develop this Node.js application:</p>
-                <ul>
-                    <li>Express & Body-Parser</li>
-                    <li>EJS Templating </li>
-                    <li>MongoDB & MongoDB Atlas</li>
-                    <li>Passport OAuth 2.0 API</li>
-                    <li>Google APIs (Geocoding and Maps Javascript)</li>
-                </ul>
-            </div>
-            <div class="work-img" style="background-image:url(../img/work/horizon.png);" ></div>
-            <a href="http://horizonlasvegas.herokuapp.com" target="_blank" class="work-link primary-btn">horizonlasvegas.herokuapp.com</a>
-        </div>
-        <!-- Second slide -->
-        <div class="item container">
-            <div class="work-description">
-                <h4>AshKatt</h4>                
-                <p>AshKatt is Ashley Kellough. She is an super talented visual artist and singer from Las Vegas.</p>
-                <p>Some of the technologies used to develop this Node.js application:</p>
-                <ul>
-                    <li>Express & Body-Parser</li>
-                    <li>EJS Templating</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="work-img" style="background-image:url(../img/work/ashkatt.png);" ></div>
-            <a href="http://ashkatt.herokuapp.com" target="_blank" class="work-link primary-btn">ashkatt.herokuapp.com</a>
-        </div>
-        <!-- Third slide -->
-        <div class="item container">
-            <div class="work-description">
-                <h4>Symphinity</h4>                
-                <p>Symphonity was my first Build Week project at Lambda School.</p>
-                <p>My task was to create a landing page and an about page.</p>
-                <p>The design of the landing page was given to me.</p>
-                <p>Some of the technologies used for development:</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>LESS</li>
-                    <li>AOS Library</li>
-                </ul>
-            </div>
-            <div class="work-img" style="background-image:url(../img/work/horizon.png);" ></div>
-            <a href="http://symphinity-songsuggester.netlify.com/" target="_blank" class="work-link primary-btn">https://symphinity-songsuggester.netlify.com/</a>
-        </div>
-    </div>
-</div>
+
+<%- include("partials/work-section") -%>
 
 <div id="skills-section" class="section" data-anchor="skills">
     <div class="owl-carousel owl-theme">

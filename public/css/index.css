@@ -23,12 +23,22 @@
   padding: 0 1.25rem;
   width: 50%;
 }
+@media (max-width: 500px) {
+  #work-section .item .work-description {
+    width: 100%;
+  }
+}
 #work-section .item .work-img {
   width: 50%;
   min-height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
+}
+@media (max-width: 500px) {
+  #work-section .item .work-img {
+    width: 100%;
+  }
 }
 #work-section .item .work-link {
   text-align: center;
