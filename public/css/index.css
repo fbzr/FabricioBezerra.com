@@ -81,11 +81,6 @@
 }
 @media (max-width: 800px) {
   #about-section .container .content .text-container {
-    width: 50%;
-  }
-}
-@media (max-width: 500px) {
-  #about-section .container .content .text-container {
     width: 100%;
   }
 }
