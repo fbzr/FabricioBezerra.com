@@ -1,6 +1,75 @@
 .section {
   height: 100vh;
 }
+.primary-btn {
+  padding: 10px 40px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #c2c2c2 !important;
+  background-color: transparent !important;
+  color: #242c34 !important;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  min-width: 150px;
+  transition-property: color, background-color;
+  transition-duration: 200ms, 200ms;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+.primary-btn:hover {
+  background-color: #c2c2c2 !important;
+  color: #fff !important;
+}
+/* navbar */
+.navbar-nav {
+  margin: auto;
+}
+.nav-item {
+  font-family: Raleway;
+  letter-spacing: 3px;
+  margin: 10px 30px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  transition: border;
+  transition-duration: 500ms;
+}
+.nav-item:hover {
+  border-top-color: #9e0000;
+  border-bottom-color: #9e0000;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+/* About */
+#about-section {
+  min-height: 100vh;
+}
+#about-section .container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+#about-section .container .content .photo-container {
+  width: 30%;
+}
+#about-section .container .content .photo-container .profile-photo {
+  height: 320px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 5px 9px 0px rgba(33, 37, 41, 0.3);
+  box-shadow: 4px 5px 9px 0px rgba(33, 37, 41, 0.3);
+}
+#about-section .container .content .text-container {
+  width: 60%;
+}
 /* Work */
 #work-section {
   /* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
@@ -12,6 +81,14 @@
   font-size: 0.8rem;
   background-color: rgba(255, 255, 0, 0.596);
   letter-spacing: 3px;
+}
+#work-section .owl-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#work-section .owl-theme .owl-nav {
+  background-color: transparent;
 }
 #work-section .item {
   display: flex;
@@ -181,54 +258,11 @@ h1 {
 .fp-slidesNav ul li a span {
   background-color: #212529;
 }
-/* navbar */
-.navbar-nav {
-  margin: auto;
-}
-.nav-item {
-  font-family: Raleway;
-  letter-spacing: 3px;
-  margin: 10px 30px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  transition: border;
-  transition-duration: 500ms;
-}
-.nav-item:hover {
-  border-top-color: #9e0000;
-  border-bottom-color: #9e0000;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-}
 /* ////// */
 .jumbotron {
   background-color: transparent;
   padding-bottom: 0;
   padding-top: 0;
-}
-.primary-btn {
-  padding: 10px 40px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #c2c2c2 !important;
-  background-color: transparent !important;
-  color: #242c34 !important;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  min-width: 150px;
-  transition-property: color, background-color;
-  transition-duration: 200ms, 200ms;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
 }
 /* home */
 .navbar {
@@ -322,39 +356,6 @@ h1 {
     stroke-dasharray: 279 140;
   }
 }
-/* About */
-#about-section {
-  min-height: 100vh;
-}
-.img-wrapper {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-.profile-photo {
-  height: 350px;
-  border-radius: 5px;
-  -webkit-box-shadow: 4px 5px 9px 0px rgba(33, 37, 41, 0.3);
-  box-shadow: 4px 5px 9px 0px rgba(33, 37, 41, 0.3);
-}
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  justify-content: space-around;
-  padding: 20px;
-  /* color: #fff; */
-}
-.about-col {
-  flex-basis: 47%;
-  display: flex;
-  flex-direction: column;
-  align-self: baseline;
-}
-.icon {
-  width: 32px;
-  height: 32px;
-}
 /* Skills */
 #skills-section .jumbotron {
   margin-bottom: 0;
@@ -371,11 +372,6 @@ h1 {
 }
 .owl-theme .owl-dots .owl-dot span {
   background: #21252949;
-}
-#work-section .owl-dots {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 .owl-prev,
 .owl-next {
