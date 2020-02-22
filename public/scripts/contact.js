@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+document.getElementById('contact-form').addEventListener('submit', submitForm);
     
     async function submitForm(e) {
         e.preventDefault();
