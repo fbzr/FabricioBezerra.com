@@ -136,25 +136,7 @@
     </div>
 </div>
 
-<!-- MODAL CONFIRMATION MESSAGE -->
-<div id="modalMessageConfirmation" class="modal fade">
-    <div class="modal-dialog modal-confirm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="icon-box error">
-                    <i class="material-icons" id="modalIcon">&#xE876;</i>
-                </div>
-                <h4 class="modal-title" id="modalTitle">Awesome!</h4>
-            </div>
-            <div class="modal-body">
-                <p class="text-center" id="modalMessage"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+<%- include("partials/modals/contact-message.ejs") -%>
 
 <script>
     document.getElementById('contactForm').addEventListener('submit', submitForm);
