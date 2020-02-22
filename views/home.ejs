@@ -1,205 +1,148 @@
 <%- include("partials/header") -%>
 <div id="fullpage">
-<div id="home-section" class="section" data-anchor="home">
-    <nav class="navbar navbar-expand navbar-light">
-        <div class="container">      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="svg-wrapper">
-            <svg class="border-svg" xmlns="http://www.w3.org/2000/svg">
-                <rect class="shape" />
-                <div class="text">
-                    <h1>Fabricio Bezerra</h1>
-                    <h4 class="subtitle">Web Developer</h4>
+    <div id="home-section" class="section" data-anchor="home">
+        <nav class="navbar navbar-expand navbar-light">
+            <div class="container">      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </svg>
-        </div>
-      
-    </div>
-</div>
-<div id="about-section" class="section" data-anchor="about">
-    <div class="container">
-        <div class="jumbotron"  >
-            <h1 class="display-3">About</h1>
-            <p class="lead">A little about me...</p>
-            <hr class="my-2">
-        </div>
-        <div class="row">
-            <div class="col col-12 col-md-6 img-wrapper pb-3">
-                <img class="profile-photo" src="../img/fabricio-bezerra.jpg" alt="">
             </div>
-            <div class="col col-12 col-md-6 about-content pb-3" >
+        </nav>
+        <div class="content">
+            <div class="svg-wrapper">
+                <svg class="border-svg" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" />
+                    <div class="text">
+                        <h1>Fabricio Bezerra</h1>
+                        <h4 class="subtitle">Web Developer</h4>
+                    </div>
+                </svg>
+            </div>
+        
+        </div>
+    </div>
+    <div id="about-section" class="section" data-anchor="about">
+        <div class="container">
+            <div class="jumbotron"  >
+                <h1 class="display-3">About</h1>
+                <p class="lead">A little about me...</p>
+                <hr class="my-2">
+            </div>
+            <div class="row">
+                <div class="col col-12 col-md-6 img-wrapper pb-3">
+                    <img class="profile-photo" src="../img/fabricio-bezerra.jpg" alt="">
+                </div>
+                <div class="col col-12 col-md-6 about-content pb-3" >
+                        <div class="about-col">
+                                <div class="about-item">
+                                    <img class="icon" src="../img/icons/las-vegas.png" />
+                                    <p> Based in Las Vegas</p>
+                                </div>
+                                <div class="about-item">
+                                    <img class="icon" src="../img/icons/heart.png" />
+                                    <p>Family, Coding, Music, Traveling and Tennis</p>
+                                </div>
+                                
+                                <div class="about-item">
+                                    <div><img class="icon" src="../img/icons/study.png" /></div>
+                                    <div><p>Self Starter and Highly Motivated to learn</p></div>
+                                </div>
+                            </div>
                     <div class="about-col">
-                            <div class="about-item">
-                                <img class="icon" src="../img/icons/las-vegas.png" />
-                                <p> Based in Las Vegas</p>
-                            </div>
-                            <div class="about-item">
-                                <img class="icon" src="../img/icons/heart.png" />
-                                <p>Family, Coding, Music, Traveling and Tennis</p>
-                            </div>
-                            
-                            <div class="about-item">
-                                <div><img class="icon" src="../img/icons/study.png" /></div>
-                                <div><p>Self Starter and Highly Motivated to learn</p></div>
-                            </div>
+                        <div class="about-item">
+                            <img class="icon" src="../img/icons/code.png" />
+                            <p>Currently a Full Stack Web Dev student at Lambda School.</p>
+                            <p> I started working as a programmer more than 10 years ago.</p> 
+                            <p>After that, I changed careers and worked exclusively with music for a while.</p>
+                            <p>I restarted coding and learning new technologies in 2019.</p>
                         </div>
-                <div class="about-col">
-                    <div class="about-item">
-                        <img class="icon" src="../img/icons/code.png" />
-                        <p>Currently a Full Stack Web Dev student at Lambda School.</p>
-                        <p> I started working as a programmer more than 10 years ago.</p> 
-                        <p>After that, I changed careers and worked exclusively with music for a while.</p>
-                        <p>I restarted coding and learning new technologies in 2019.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<%- include("partials/work-section") -%>
+    <%- include("partials/work-section") -%>
 
-<%- include("partials/skills") -%>
+    <%- include("partials/skills") -%>
 
-<div id="contact-section" class="section" data-anchor="contact">
-    <div class="container">
-        <div class="jumbotron" >
-            <h1 class="display-3">Contact</h1>
-            <p class="lead">I look forward to hearing from you.</p>
-            <hr class="my-2">
-        </div>  
+    <div id="contact-section" class="section" data-anchor="contact">
+        <div class="container">
+            <div class="jumbotron" >
+                <h1 class="display-3">Contact</h1>
+                <p class="lead">I look forward to hearing from you.</p>
+                <hr class="my-2">
+            </div>  
 
-        <div class="row contact-form">
-            <div class="col-md-4 order-2 order-md-1">
-                <div class="row">
-                    <div class="col col-12">
-                    <p>Fabricio Bezerra</p>
-                    </div>
-                    <div class="col col-12">
-                        <p>+1 (702) 241-6148</p>
-                    </div>
-                    <div class="col col-12">
-                        <p>contact@fabriciobezerra.com</p>
+            <div class="row contact-form">
+                <div class="col-md-4 order-2 order-md-1">
+                    <div class="row">
+                        <div class="col col-12">
+                        <p>Fabricio Bezerra</p>
+                        </div>
+                        <div class="col col-12">
+                            <p>+1 (702) 241-6148</p>
+                        </div>
+                        <div class="col col-12">
+                            <p>contact@fabriciobezerra.com</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8 order-1 order-md-2">
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="fname">Name:</label>
-                        <div class="col-sm-12">
-                        <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
+                <div class="col-md-8 order-1 order-md-2">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="fname">Name:</label>
+                            <div class="col-sm-12">
+                            <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-12">
-                        <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-12">
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="comment">Message:</label>
-                        <div class="col-sm-12">
-                        <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">Message:</label>
+                            <div class="col-sm-12">
+                            <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-12">
-                        <input type="submit" class="primary-btn" value="Send">
-                    </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col col-12 order-3">
-                <a href="http://www.facebook.com/fabriciobezerramusic"><img src="../img/icons/facebook.png" alt=""></i></a>
-                <a href="http://www.instagram.com/fabriciobezerramusic"><img src="../img/icons/instagram.png" alt=""></i></a>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-12">
+                            <input type="submit" class="primary-btn" value="Send">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-12 order-3">
+                    <a href="http://www.facebook.com/fabriciobezerramusic"><img src="../img/icons/facebook.png" alt=""></i></a>
+                    <a href="http://www.instagram.com/fabriciobezerramusic"><img src="../img/icons/instagram.png" alt=""></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<%- include("partials/modals/contact-message.ejs") -%>
+    <%- include("partials/modals/contact-message.ejs") -%>
 
-<script>
-    document.getElementById('contactForm').addEventListener('submit', submitForm);
-    
-    async function submitForm(e) {
-        e.preventDefault();
 
-        try {
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LdTx7cUAAAAAPQGHWIczsIUJhuz6dJkOP_iduPw', {action: 'home'})
-                    .then(async function(token) {
-                        
-                        const name = document.getElementById('name').value;
-                        const email = document.getElementById('email').value;
-                        const message = document.getElementById('message').value;
-
-                        const body = JSON.stringify({ 
-                            name,
-                            email,
-                            message,
-                            token
-                        });
-
-                        const config = {
-                            headers: {
-                                "Content-Type": "application/json"
-                            }
-                        } 
-                        let msg = '';
-                        try {
-                            const res = await axios.post('/contact', body, config);
-                            document.getElementById('modalTitle').innerHTML = "Awesome";
-                            document.getElementById('modalIcon').innerHTML = "&#xE876;"
-                            document.querySelector('.icon-box').classList.remove('error');
-                            msg = res.data.msg;
-
-                            // Redirect to "/" when modal popup is closed
-                            $("#modalMessageConfirmation").on('hidden.bs.modal', function(){
-                                window.location.replace("/");
-                            });
-                        } catch (err) { 
-                            document.getElementById('modalTitle').innerHTML = "Error";
-                            document.getElementById('modalIcon').innerHTML = "&#xe645;"
-                            document.querySelector('.icon-box').classList.add('error');
-                            msg = err.response.data.errors[0].msg;
-
-                            if (err.recaptcha) {
-                                console.log(err.recaptcha);
-                            }
-                        }
-                        document.getElementById('modalMessage').innerHTML = msg;
-                        $('#modalMessageConfirmation').modal('toggle');
-                }); 
-            });
-        } catch (err) {
-            console.error(err.message);
-        }
-    }
-</script>
-<div id="credit-section" class="section">
-    <h4>Developed by</h4>
-    <h2>© 2020 Fabricio Bezerra</h2><p>All Rights Reserved</p>
-</div>
+    <div id="credit-section" class="section">
+        <h4>Developed by</h4>
+        <h2>© 2020 Fabricio Bezerra</h2><p>All Rights Reserved</p>
+    </div>
 
 </div>
 
