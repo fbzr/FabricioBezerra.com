@@ -6,20 +6,34 @@
     .container {
         .content {
             .flex(@justify: space-evenly, @align: flex-start);
+            flex-wrap: wrap;
+            
+            .profile-photo {
+                max-height: 300px;
+                border-radius: 5px;
+                -webkit-box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3); 
+                box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3);   
 
-            .photo-container {
-                width: 30%;
-
-                .profile-photo {
-                    height: 320px;
-                    border-radius: 5px;
-                    -webkit-box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3); 
-                    box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3);   
+                @media @sm-laptop {
+                    max-height: 250px;
+                }
+                @media @tablet {
+                    max-height: 200px;
+                    margin-bottom: 20px;
                 }
             }
-
+            
             .text-container {
                 width: 60%;
+
+                @media @tablet {
+                    width: 50%;
+                }
+                
+                @media @mobile {
+                    width: 100%;
+                }
+                
             }
         }
     }
