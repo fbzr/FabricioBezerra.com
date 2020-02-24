@@ -480,8 +480,19 @@ hr {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 500px) {
+  #about-section .container .content .profile-photo {
+    max-height: 150px;
+  }
+}
 #about-section .container .content .text-container {
   width: 60%;
+}
+@media (min-width: 1000px) {
+  #about-section .container .content .text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 800px) {
   #about-section .container .content .text-container {

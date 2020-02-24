@@ -21,10 +21,19 @@
                     max-height: 200px;
                     margin-bottom: 20px;
                 }
+                @media @mobile {
+                    max-height: 150px;
+                }
             }
             
             .text-container {
                 width: 60%;
+                @media (min-width: 1000px) {
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
 
                 @media @tablet {
                     width: 100%;
