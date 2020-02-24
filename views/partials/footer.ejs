@@ -6,6 +6,8 @@
     <!-- Contact -->
     <script src="../../scripts/contact.js"> </script>
 
+    <script src="../../scripts/fullpage.js"></script>
+    <script src="../../scripts/carousel.js"></script>
 
     <script type="text/javascript">
         // Border animation on home page
@@ -14,62 +16,7 @@
             $('.svg-wrapper').click(function() {
                 $('.shape').toggleClass('shape-border');
             });
-        });
-        
-        // fullpage js
-        new fullpage('#fullpage', {
-            licenseKey: 'E5C049BC-0EA74FC2-B5EF5AD2-B3915038',
-            //options here
-            autoScrolling:true,
-            navigation: true,
-            slidesNavigation: true,
-            slidesNavigation: true,
-            slidesNavPosition: 'bottom',
-            verticalCentered: true,
-            navigationTooltips: ['Home', 'About', 'Recent Work', 'Skills', 'Contact'],
-            fixedElements: ['#modalMessageConfirmation'],
-            scrollOverflow:true,
-            scrollOverflowOptions: {
-            	click: false,
-	            preventDefaultException: { tagName:/.*/ }
-            },
-
-            onLeave: (origin, destination, direction) => {
-                if (destination.anchor === "contact") {
-                    document.querySelector('.grecaptcha-badge').style.visibility = "visible";
-                } else if (origin.anchor === "contact") {
-                    document.querySelector('.grecaptcha-badge').style.visibility = "hidden";
-                }
-            }
-        });
-
-        //methods
-        fullpage_api.setAllowScrolling(true);  
-
-
-        // Owl Carousel
-        $('.owl-skills').owlCarousel({
-            autoplay: false,
-            smartSpeed: 800,
-            dots: true,
-            loop: true,
-            nav: true,
-            margin:50,
-            items: 1
-        });
-        $('.work-carousel').owlCarousel({
-            autoplay: false,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true,
-            smartSpeed: 800,
-            dots: true,
-            loop: true,
-            nav: true,
-            margin: 100,
-            items: 2,
-            stagePadding: 100
-        });
-        
+        });        
     </script>
     
 

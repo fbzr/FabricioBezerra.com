@@ -10,6 +10,7 @@
 
     .nav-item {
         font-family: Raleway;
+        font-size: 1rem;
         letter-spacing: 3px;
         margin: 10px 30px;
     
@@ -24,6 +25,10 @@
         &:hover {
             border-top-color: @border-color;
             border-bottom-color: @border-color;
+        }
+
+        @media @mobile {
+            margin: 10px 7px;
         }
     }
 }
