@@ -352,10 +352,13 @@ hr {
   width: 100%;
   position: absolute;
 }
-.navbar .navbar-nav {
+.navbar .container {
+  width: 100%;
+}
+.navbar .container .navbar-nav {
   margin: auto;
 }
-.navbar .nav-item {
+.navbar .container .nav-item {
   font-family: Raleway;
   font-size: 1rem;
   letter-spacing: 3px;
@@ -367,19 +370,21 @@ hr {
   transition: border-color;
   transition-duration: 500ms;
 }
-.navbar .nav-item:hover {
+.navbar .container .nav-item:hover {
   border-top-color: #9e0000;
   border-bottom-color: #9e0000;
 }
 @media (max-width: 500px) {
-  .navbar .nav-item {
+  .navbar .container .nav-item {
     margin: 10px 3px;
     letter-spacing: 1px;
   }
 }
-.navbar .nav-item .nav-link {
-  padding-right: 0.3rem;
-  padding-left: 0.3rem;
+@media (max-width: 500px) {
+  .navbar .container .nav-item .nav-link {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
 }
 /* home */
 #home-section .content {
