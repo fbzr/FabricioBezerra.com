@@ -666,8 +666,13 @@ hr {
   flex-wrap: wrap;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .skills-list {
+    justify-content: space-around;
+  }
+}
 .skills-list .skill-wrapper {
-  flex-basis: 20%;
+  width: 20%;
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
@@ -677,6 +682,7 @@ hr {
 @media (max-width: 500px) {
   .skills-list .skill-wrapper {
     padding: 10px 7px;
+    width: 30%  ;
   }
 }
 .skills-list .skill-wrapper .skill-icon {
@@ -692,8 +698,18 @@ hr {
 .skills-list .skill-wrapper .skill-icon.mongo-icon {
   width: 125px;
 }
+@media (max-width: 500px) {
+  .skills-list .skill-wrapper .skill-icon.mongo-icon {
+    width: 100px;
+  }
+}
 .skills-list .skill-wrapper p {
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .skills-list .skill-wrapper p {
+    font-size: 1rem;
+  }
 }
 .skills-list .skill-wrapper span {
   font-size: 0.8rem;
