@@ -1,8 +1,19 @@
 /* Fullpage.js */
-#fp-nav ul li .fp-tooltip {
-    color: @font-color;
-    letter-spacing: 3px;
+#fp-nav {
+    @media @mobile {
+        display: none;
+    }
+    
+    ul {
+        li {
+            .fp-tooltip {
+                color: @font-color;
+                letter-spacing: 3px;
+            }
+        }
+    }
 }
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background-color: @font-color; 
 }
