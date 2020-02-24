@@ -10,7 +10,9 @@
         }
     }
 
+    
     .owl-stage {
+        .flex(@align: flex-start);
         .item {
             .flex(@align: flex-start, @justify: space-between);
             flex-wrap: wrap;
@@ -38,7 +40,7 @@
                 }
 
                 ul {
-                    .flex(@justify: space-between);
+                    .flex(@justify: flex-start);
                     flex-wrap: wrap;
                     li {
                         font-size: 1rem;
@@ -46,6 +48,7 @@
                         color: white;
                         padding: .5rem .7rem;
                         border-radius: 5px;
+                        margin-right: .5rem;
                         margin-bottom: .5rem;
                     }
                 }

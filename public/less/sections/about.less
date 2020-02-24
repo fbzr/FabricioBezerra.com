@@ -37,7 +37,17 @@
 
                 @media @tablet {
                     width: 100%;
-                }                
+                    .flex(@direction: column);
+                }
+                
+                p {
+                    @media @tablet {
+                        width: 70%;
+                    }
+                    @media @mobile {
+                        width: 100%;
+                    }
+                }              
             }
         }
     }

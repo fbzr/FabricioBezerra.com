@@ -2,7 +2,7 @@
         // Owl Carousel
         $('.owl-skills').owlCarousel({
             autoplay: false,
-            smartSpeed: 800,
+            smartSpeed: 300,
             dots: true,
             loop: true,
             nav: true,
@@ -11,9 +11,7 @@
         });
         $('.work-carousel').owlCarousel({
             autoplay: false,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true,
-            smartSpeed: 800,
+            smartSpeed: 300,
             dots: true,
             loop: true,
             nav: true,

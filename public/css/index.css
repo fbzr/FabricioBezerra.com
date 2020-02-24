@@ -160,11 +160,17 @@ p {
   margin-bottom: 0.6rem;
   line-height: 1.3rem;
 }
+.container {
+  width: auto;
+  max-width: 100%;
+  margin: 0 7%;
+}
 .section {
   height: 100vh;
 }
 .section .section-header {
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 @media (max-width: 500px) {
   .section .section-header {
@@ -367,8 +373,13 @@ hr {
 }
 @media (max-width: 500px) {
   .navbar .nav-item {
-    margin: 10px 7px;
+    margin: 10px 3px;
+    letter-spacing: 1px;
   }
+}
+.navbar .nav-item .nav-link {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
 }
 /* home */
 #home-section .content {
@@ -497,6 +508,20 @@ hr {
 @media (max-width: 800px) {
   #about-section .container .content .text-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  #about-section .container .content .text-container p {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  #about-section .container .content .text-container p {
+    width: 100%;
   }
 }
 /* Work */
@@ -504,6 +529,12 @@ hr {
   font-size: 0.8rem;
   background-color: rgba(255, 255, 0, 0.596);
   letter-spacing: 3px;
+}
+#work-section .owl-stage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 #work-section .owl-stage .item {
   display: flex;
@@ -538,7 +569,7 @@ hr {
 #work-section .owl-stage .item .work-description ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -548,6 +579,7 @@ hr {
   color: white;
   padding: 0.5rem 0.7rem;
   border-radius: 5px;
+  margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
 #work-section .owl-stage .item .work-img {
