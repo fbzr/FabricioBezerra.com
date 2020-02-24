@@ -342,6 +342,7 @@ hr {
   font-size: 5rem !important;
   height: 100%;
   min-width: 50px;
+  color: rgba(51, 51, 51, 0.5) !important;
 }
 .owl-prev {
   left: 2%;
@@ -640,10 +641,20 @@ hr {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .skills-list .skill-wrapper {
+    padding: 10px 20px;
+  }
+}
 .skills-list .skill-wrapper .skill-icon {
-  width: 80px !important;
+  width: 80px;
   height: auto;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .skills-list .skill-wrapper .skill-icon {
+    width: 60px;
+  }
 }
 .skills-list .skill-wrapper .skill-icon.mongo-icon {
   width: 125px;
@@ -776,10 +787,15 @@ hr {
   line-height: 1.7rem;
 }
 #credit-section .title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 #credit-section .credit {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  #credit-section .credit {
+    font-size: 1.4rem;
+  }
 }
 #credit-section .rights {
   font-size: 1rem;
@@ -830,51 +846,6 @@ hr {
 @media screen and (max-width: 992px) {
   .skill-wrapper {
     padding: 10px 15px;
-  }
-}
-@media screen and (max-width: 466px) {
-  .jumbotron .display-3 {
-    font-size: 3.5rem;
-  }
-  .jumbotron .lead {
-    font-size: 1rem;
-  }
-  #skills-section .jumbotron .display-3 {
-    font-size: 3rem;
-  }
-  #skills-section .display-3 span {
-    font-size: 2.3rem !important;
-  }
-  #skills-section .skills-list p {
-    margin-bottom: 0.3rem;
-  }
-  .skill-wrapper {
-    padding: 7px 25px;
-  }
-  .skill-wrapper p {
-    font-size: 1rem;
-  }
-  .skill-wrapper h3 {
-    font-size: 1.3rem;
-  }
-  .skill-icon {
-    width: 60px !important;
-  }
-  .primary-btn {
-    padding: 10px 10px;
-  }
-  #credit-section h4 {
-    font-size: 1.2rem;
-  }
-  #credit-section h2 {
-    font-size: 1.5rem;
-  }
-  #credit-section p {
-    font-size: 0.8rem;
-  }
-  .nav-item {
-    margin: 10px 7px;
-    letter-spacing: 0;
   }
 }
 @media screen and (max-width: 374px) {
