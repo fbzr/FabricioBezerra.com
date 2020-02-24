@@ -1,3 +1,13 @@
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  .flex();
+
+  .item {
+    margin-bottom: 3rem;
+  }
+}
+
+
+
 /* center carousel content content */
 .owl-stage {
     display: flex;
@@ -5,10 +15,10 @@
 }
 /* Change color of carousel's indicators */
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #212529bc;
+    background: @font-color;
 }
 .owl-theme .owl-dots .owl-dot span {
-    background: #21252949;
+    background: fadeout(@font-color,50%);
 }
 
 .owl-prev,
@@ -30,7 +40,7 @@
 }
 
 .owl-theme .owl-nav {
-    color: #21252949;
+    color: @font-color;
     text-decoration: none;
 }
 
@@ -38,4 +48,9 @@
     background: none;
     color: #212529bc;
     text-decoration: none;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 0;
 }

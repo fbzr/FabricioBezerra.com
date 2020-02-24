@@ -310,6 +310,17 @@ hr {
   background: #25274d;
   outline: none;
 }
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.no-js .owl-carousel .item,
+.owl-carousel.owl-loaded .item {
+  margin-bottom: 3rem;
+}
 /* center carousel content content */
 .owl-stage {
   display: flex;
@@ -318,10 +329,10 @@ hr {
 /* Change color of carousel's indicators */
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #212529bc;
+  background: #333;
 }
 .owl-theme .owl-dots .owl-dot span {
-  background: #21252949;
+  background: rgba(51, 51, 51, 0.5);
 }
 .owl-prev,
 .owl-next {
@@ -339,13 +350,17 @@ hr {
   right: 2%;
 }
 .owl-theme .owl-nav {
-  color: #21252949;
+  color: #333;
   text-decoration: none;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: none;
   color: #212529bc;
   text-decoration: none;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 0;
 }
 /* navbar */
 .navbar {
@@ -602,6 +617,7 @@ hr {
 @media (max-width: 500px) {
   #work-section .owl-stage .item .work-img {
     width: 100%;
+    min-height: 120px;
     margin-top: 0.5rem;
   }
 }
