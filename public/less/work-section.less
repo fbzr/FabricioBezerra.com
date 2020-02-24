@@ -9,16 +9,6 @@
         }
     }
 
-    .owl-dots {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .owl-theme .owl-nav {
-        background-color: transparent;
-    }
-
     /* Add a bottom margin to avoid auto scroll before being able to see the last item on the list */
     .item {
         display: flex;
@@ -26,7 +16,7 @@
         justify-content: center;
         margin-bottom: 3rem !important;
         position: relative;
-
+        z-index: 1000;
         .work-description {
             display: flex;
             flex-direction: column;

@@ -1,5 +1,48 @@
+// * {
+//     max-width: 100%;
+// }
+
+body {
+    font-size: 62.5%;
+}
+
 .section {
     height: 100vh;
+
+    .section-header {
+        margin-bottom: 1.5rem;
+        .section-subtitle {
+            font-size: 1.25rem;
+            letter-spacing: 1.5px;
+        
+            @media @mobile {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+hr {
+    margin: .5rem 0;
+}
+
+
+
+.grecaptcha-badge {
+    visibility: hidden;
 }
 
 .primary-btn {

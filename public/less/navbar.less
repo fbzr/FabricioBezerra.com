@@ -1,29 +1,29 @@
 
 /* navbar */
-.navbar-nav {
-    margin: auto;
-}
-.nav-item {
-    font-family: Raleway;
-    letter-spacing: 3px;
-    margin: 10px 30px;
+.navbar {
+    width: 100%;
+    position: absolute;
 
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-top-style: solid;
-    border-bottom-style: solid;
+    .navbar-nav {
+        margin: auto;
+    }
 
-    transition: border;
-    transition-duration: 500ms;
-}
+    .nav-item {
+        font-family: Raleway;
+        letter-spacing: 3px;
+        margin: 10px 30px;
+    
+        border-color: transparent;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        border-style: solid;
+    
+        transition: border-color;
+        transition-duration: 500ms;
 
-.nav-item:hover {
-    border-top-color: @border-color;
-    border-bottom-color: @border-color;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-top-style: solid;
-    border-bottom-style: solid;
+        &:hover {
+            border-top-color: @border-color;
+            border-bottom-color: @border-color;
+        }
+    }
 }
