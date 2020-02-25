@@ -23,7 +23,7 @@
                     margin-bottom: 0.5rem;
                 }
                 @media @mobile {
-                    margin-bottom: .2rem;
+                    margin-bottom: .5rem;
                     letter-spacing: 3px;
                 }
             }
@@ -41,6 +41,10 @@
             
             .label {
                 margin-bottom: 0;
+
+                @media @mobile {
+                    display: none;
+                }
 
                 p {
                     margin-bottom: .2rem;

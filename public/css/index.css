@@ -750,7 +750,8 @@ hr {
 }
 @media (max-width: 500px) {
   #contact-section .contact-content .info p {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
   }
 }
 #contact-section .contact-content #contact-form {
@@ -772,6 +773,11 @@ hr {
 }
 #contact-section .contact-content #contact-form .label {
   margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  #contact-section .contact-content #contact-form .label {
+    display: none;
+  }
 }
 #contact-section .contact-content #contact-form .label p {
   margin-bottom: 0.2rem;
