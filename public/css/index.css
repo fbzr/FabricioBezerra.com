@@ -579,7 +579,7 @@ hr {
 }
 @media (max-width: 500px) {
   #work-section .owl-stage .item {
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 #work-section .owl-stage .item .work-description {
@@ -657,7 +657,7 @@ hr {
 }
 @media (max-width: 500px) {
   #work-section .owl-stage .item .work-link {
-    margin: 15px auto 0 auto;
+    margin: 10px auto 0 auto;
   }
 }
 .skills-list {
