@@ -327,6 +327,10 @@ hr {
 .owl-carousel.owl-loaded .item {
   margin-bottom: 3rem;
 }
+.no-js .owl-carousel .item.skills-item,
+.owl-carousel.owl-loaded .item.skills-item {
+  margin-bottom: 2.7rem;
+}
 @media (max-width: 500px) {
   .owl-nav {
     display: none;
@@ -681,8 +685,8 @@ hr {
 }
 @media (max-width: 500px) {
   .skills-list .skill-wrapper {
-    padding: 10px 7px;
-    width: 30%  ;
+    padding: 0 5px 10px;
+    width: 30%;
   }
 }
 .skills-list .skill-wrapper .skill-icon {
