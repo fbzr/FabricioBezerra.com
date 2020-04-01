@@ -612,6 +612,15 @@ hr {
     margin-bottom: 0.7rem;
   }
 }
+#work-section .owl-stage .item .work-description .technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#work-section .owl-stage .item .work-description .technologies p {
+  margin: 0;
+}
 #work-section .owl-stage .item .work-description ul {
   display: flex;
   flex-direction: row;
