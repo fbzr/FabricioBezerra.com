@@ -1,0 +1,54 @@
+
+/* About */
+#about-section {
+    height: 100vh;
+
+    .container {
+        .content {
+            .flex(@justify: space-evenly, @align: flex-start);
+            flex-wrap: wrap;
+            
+            .profile-photo {
+                max-height: 300px;
+                border-radius: 5px;
+                -webkit-box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3); 
+                box-shadow: 4px 5px 9px 0px rgba(33,37,41,0.3);   
+
+                @media @sm-laptop {
+                    max-height: 250px;
+                }
+                @media @tablet {
+                    max-height: 200px;
+                    margin-bottom: 20px;
+                }
+                @media @mobile {
+                    max-height: 150px;
+                }
+            }
+            
+            .text-container {
+                width: 60%;
+                @media (min-width: 1000px) {
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                @media @tablet {
+                    width: 100%;
+                    .flex(@direction: column);
+                }
+                
+                p {
+                    @media @tablet {
+                        width: 70%;
+                    }
+                    @media @mobile {
+                        width: 100%;
+                    }
+                }              
+            }
+        }
+    }
+}

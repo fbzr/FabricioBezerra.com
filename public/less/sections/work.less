@@ -1,0 +1,97 @@
+/* Work */
+#work-section {
+    .section-header {
+        .subtitle {
+            span {
+                font-size: .8rem;
+                background-color: rgba(255, 255, 0, 0.596);
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    .owl-stage {
+        .flex(@align: flex-start);
+        .item {
+            .flex(@align: flex-start, @justify: space-between);
+            flex-wrap: wrap;
+            
+            margin-bottom: 3rem !important;
+            position: relative;
+
+            @media @mobile {
+                margin-bottom: 2rem !important;
+            }
+            
+            .work-description {
+                display: flex;
+                flex-direction: column;
+                padding-right: 1.25rem;
+                width: 50%;
+                
+                @media @tablet {
+                    width: 60%;
+                }
+                @media @mobile {
+                    width: 100%;
+                }
+
+                .work-title {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    @media @mobile {
+                        margin-bottom: .7rem;
+                    }
+                }
+
+                ul {
+                    .flex(@justify: flex-start);
+                    flex-wrap: wrap;
+                    li {
+                        font-size: 1rem;
+                        background-color: @work-li;
+                        color: white;
+                        padding: .5rem .7rem;
+                        border-radius: 5px;
+                        margin-right: .5rem;
+                        margin-bottom: .5rem;
+
+                        @media @mobile {
+                            font-size: .9rem;
+                            padding: 0.4em 0.6rem;
+                            margin-bottom: .3rem;
+                        }
+                    }
+                }
+            }
+    
+            .work-img {
+                width: 50%;
+                min-height: 200px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top; 
+                @media @tablet {
+                    width: 40%;
+                }
+                @media @mobile {
+                    width: 100%;
+                    min-height: 120px;
+                    margin-top: .5rem;
+                }
+            }
+    
+            .work-link {
+                text-align: center;
+                width: 400px;
+                margin: 20px auto 0 auto;
+
+                @media @mobile {
+                    margin: 10px auto 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @media @mobile {
+        justify-content: space-around;
+    }
+
+    .skill-wrapper {
+        width: 20%;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media @mobile {
+            padding: 0 5px 10px;
+            width: 30%;
+        }
+    
+        .skill-icon {
+            width: 80px;
+            height: auto;
+            padding-bottom: 10px;
+
+            @media @mobile {
+                width: 60px;
+            }
+
+            &.mongo-icon {
+                width: 125px;
+
+                @media @mobile {
+                    width: 100px;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+
+            @media @mobile {
+                font-size: 1rem;
+            }
+        }
+
+        span {
+            font-size: .8rem;
+            letter-spacing: 3px;
+        }
+    }
+}

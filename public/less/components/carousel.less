@@ -1,0 +1,67 @@
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  .flex();
+
+  .item {
+    margin-bottom: 3rem;
+
+    &.skills-item {
+      margin-bottom: 2.7rem;
+    }
+  }
+}
+
+.owl-nav {
+  @media @mobile {
+    display: none;
+  }
+}
+
+
+
+/* center carousel content content */
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+/* Change color of carousel's indicators */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: @font-color;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: fadeout(@font-color,50%);
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem !important;
+  height: 100%;
+  min-width: 50px;
+  color: fadeout(@font-color, 50%) !important;
+}
+
+.owl-prev {
+  left: 2%;
+}
+
+.owl-next {
+  right: 2%;
+}
+
+.owl-theme .owl-nav {
+    color: @font-color;
+    text-decoration: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #212529bc;
+    text-decoration: none;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+}
