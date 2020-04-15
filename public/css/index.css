@@ -685,7 +685,7 @@ hr {
   }
 }
 .skills-list .skill-wrapper {
-  width: 20%;
+  width: 15%;
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
@@ -694,8 +694,8 @@ hr {
 }
 @media (max-width: 500px) {
   .skills-list .skill-wrapper {
-    padding: 0 5px 10px;
-    width: 30%;
+    margin-bottom: 10px;
+    width: 25%;
   }
 }
 .skills-list .skill-wrapper .skill-icon {
@@ -710,6 +710,8 @@ hr {
 }
 .skills-list .skill-wrapper .skill-icon.mongo-icon {
   width: 125px;
+  margin-top: 16.56px;
+  margin-bottom: 16.56px;
 }
 @media (max-width: 500px) {
   .skills-list .skill-wrapper .skill-icon.mongo-icon {
