@@ -663,14 +663,35 @@ hr {
     margin-top: 0.5rem;
   }
 }
-#work-section .owl-stage .item .work-link {
+#work-section .owl-stage .item .links-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #work-section .owl-stage .item .links-container {
+    justify-content: space-between;
+  }
+}
+#work-section .owl-stage .item .links-container .work-link {
   text-align: center;
   width: 400px;
-  margin: 20px auto 0 auto;
+  justify-self: center;
+  margin: 20px 10px 0;
+}
+@media (max-width: 800px) {
+  #work-section .owl-stage .item .links-container .work-link {
+    width: 48%;
+    margin: 20px 0 0;
+  }
+  #work-section .owl-stage .item .links-container .work-link.unique {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
-  #work-section .owl-stage .item .work-link {
-    margin: 10px auto 0 auto;
+  #work-section .owl-stage .item .links-container .work-link {
+    margin-top: 5px;
   }
 }
 .skills-list {

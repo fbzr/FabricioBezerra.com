@@ -91,13 +91,34 @@
                 }
             }
     
-            .work-link {
-                text-align: center;
-                width: 400px;
-                margin: 20px auto 0 auto;
+            .links-container {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                width: 100%;
 
-                @media @mobile {
-                    margin: 10px auto 0 auto;
+                @media @tablet {
+                    justify-content: space-between;    
+                }
+
+                .work-link {
+                    text-align: center;
+                    width: 400px;
+                    justify-self: center;
+                    margin: 20px 10px 0;
+    
+                    @media @tablet {
+                        width: 48%;
+                        margin: 20px 0 0;
+                        
+                        &.unique {
+                            width: 100%;
+                        }
+                    }
+
+                    @media @mobile {
+                        margin-top: 5px;
+                    }
                 }
             }
         }
