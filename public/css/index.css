@@ -358,6 +358,13 @@ hr {
   height: 100%;
   min-width: 50px;
   color: rgba(51, 51, 51, 0.5) !important;
+  outline: none !important;
+  transition-property: background;
+  transition-duration: 300ms;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background: rgba(229, 229, 229, 0.5) !important;
 }
 .owl-prev {
   left: 2%;
