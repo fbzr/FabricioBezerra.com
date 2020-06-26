@@ -610,7 +610,7 @@ hr {
   }
 }
 #work-section .owl-stage .item .work-description .work-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -625,7 +625,10 @@ hr {
   justify-content: center;
   align-items: flex-start;
 }
-#work-section .owl-stage .item .work-description .technologies p {
+#work-section .owl-stage .item .work-description .technologies div {
+  width: 50%;
+}
+#work-section .owl-stage .item .work-description .technologies div p {
   margin: 0;
 }
 #work-section .owl-stage .item .work-description ul {
