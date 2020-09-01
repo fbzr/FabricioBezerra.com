@@ -1,56 +1,67 @@
 .skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  @media @mobile {
+    justify-content: space-around;
+  }
+
+  .skill-wrapper {
+    width: 13%;
+    padding: 10px 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 10px;
+      width: 18%;
+    }
+
+    @media @tablet {
+      margin-bottom: 10px;
+      width: 20%;
+    }
 
     @media @mobile {
-        justify-content: space-around;
+      margin-bottom: 10px;
+      width: 25%;
     }
 
-    .skill-wrapper {
-        width: 15%;
-        padding: 10px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .skill-icon {
+      width: 60px;
+      height: auto;
+      padding-bottom: 10px;
 
+      @media @mobile {
+        width: 40px;
+        padding-bottom: 4px;
+      }
+
+      &.mongo-icon {
+        width: 125px;
+        margin-top: 16.56px;
+        margin-bottom: 16.56px;
         @media @mobile {
-            margin-bottom: 10px;
-            width: 25%;
+          width: 100px;
         }
-    
-        .skill-icon {
-            width: 80px;
-            height: auto;
-            padding-bottom: 10px;
-
-            @media @mobile {
-                width: 60px;
-            }
-
-            &.mongo-icon {
-                width: 125px;
-                margin-top: 16.56px;
-                margin-bottom: 16.56px;
-                @media @mobile {
-                    width: 100px;
-                }
-            }
-        }
-
-        p {
-            font-size: 1.2rem;
-
-            @media @mobile {
-                font-size: 1rem;
-            }
-        }
-
-        span {
-            font-size: .8rem;
-            letter-spacing: 3px;
-        }
+      }
     }
+
+    p {
+      font-size: 1.2rem;
+
+      @media @tablet {
+        font-size: 1rem;
+      }
+    }
+
+    span {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+    }
+  }
 }
