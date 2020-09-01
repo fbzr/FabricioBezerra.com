@@ -761,7 +761,8 @@ hr {
 }
 @media (max-width: 500px) {
   .skills-list .skill-wrapper .skill-icon.mongo-icon {
-    width: 100px;
+    width: 79px;
+    margin-top: 0;
   }
 }
 .skills-list .skill-wrapper p {
