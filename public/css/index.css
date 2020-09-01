@@ -738,12 +738,13 @@ hr {
 }
 @media (max-width: 500px) {
   .skills-list .skill-wrapper {
+    padding: 3px 30px;
     margin-bottom: 10px;
     width: 25%;
   }
 }
 .skills-list .skill-wrapper .skill-icon {
-  width: 61px;
+  width: 60px;
   height: auto;
   padding-bottom: 10px;
 }
